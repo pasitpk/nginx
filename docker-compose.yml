@@ -1,0 +1,9 @@
+version: '3'
+services:
+    nginx:
+        build: .
+        container_name: nginx
+        volumes:
+            - ../apps:/apps
+        network_mode: host
+        restart: unless-stopped
