@@ -68,7 +68,6 @@ server {
         index  index.html;
     }
 
-    # *** MUST CHOWN (-R) OF THE TARGETS TO www-data 
 	location ~ \.php$ {
 		root /home/ubuntu/apps;
 		include snippets/fastcgi-php.conf;
